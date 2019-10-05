@@ -6,8 +6,8 @@ COPY . .
 
 RUN npm install --production
 
-COPY ./resources/.env.docker .env
+COPY ./docker/dev/.env .env
 
 EXPOSE 3000
 
-ENTRYPOINT ["/usr/local/bin/npm", "run", "start"]
+ENTRYPOINT ["/usr/local/bin/npm", "run", "dev"]

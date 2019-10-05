@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch src --exec ts-node -r dotenv/config ./src/app.ts"
+	"dev": "nodemon --watch src --exec ts-node -r dotenv/config ./src/app.ts",
+	"build": "tsc",
+	"start": "npx run build && node ./src/app.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.6",
