@@ -1,0 +1,8 @@
+version: '3'
+services:
+  unittest:
+    build: 
+      context: ../../
+      dockerfile: docker/unittest/Dockerfile
+    image: nodejs-default-boilerplate-unittest
+    container_name: nodejs-default-boilerplate-unittest

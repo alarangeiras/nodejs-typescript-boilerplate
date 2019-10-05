@@ -1,9 +1,11 @@
 version: '3'
 services:
-  web:
+  unittest:
     build: 
       context: ../../
       dockerfile: docker/dev/Dockerfile
+    image: nodejs-default-boilerplate-dev      
+    container_name: nodejs-default-boilerplate-dev      
     ports:
     - "3000:3000"
     links:
