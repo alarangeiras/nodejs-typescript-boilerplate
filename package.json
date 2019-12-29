@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon --watch src --exec ts-node -r dotenv/config ./src/app.ts",
     "build": "tsc",
-    "test": "jest",
+    "test": "jest --reporters=default --reporters=jest-junit",
     "dev-test": "jest --watch",
     "start": "build && node ./src/app.ts"
   },
@@ -15,6 +15,7 @@
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.11",
     "jest": "^24.9.0",
+    "jest-junit": "^10.0.0",
     "nodemon": "^1.19.3",
     "ts-jest": "^24.1.0",
     "ts-node": "^8.4.1",
